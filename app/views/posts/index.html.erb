@@ -2,8 +2,8 @@
 <h4 class='mt-2 display-4'>Пости:</h4>	
 <% @post.each do |post| %>
 <div class="alert alert-light">
-<h3 class="font-weight-bolder"><%= post.title %></h3>
-<p><%= post.body %></p>
-<%= link_to "Читати далі", post_path(post), :class => 'btn btn-outline-primary' %>
+    <h3 class="font-weight-bolder"><%= post.title %></h3>
+    <p><%= post.body %></p>
+    <%= link_to "Читати далі", post_path(post), :class => 'btn btn-outline-primary' %>
 </div>
 <% end %>
